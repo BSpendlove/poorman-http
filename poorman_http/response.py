@@ -55,7 +55,6 @@ class HTTPResponse:
             k, v = header.split(":", 1)
             v = v.rstrip()
             if k in self.headers:
-                print("dingdong")
                 self.headers[k] = f"{self.headers[k]},{v}"
                 continue
 
